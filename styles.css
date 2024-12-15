@@ -1,0 +1,313 @@
+/* Allgemeine Stile */
+body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Showcase Sektion */
+.showcase {
+    background: url('img/showcase/showcase.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.showcase-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.showcase-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn:hover {
+    background: #45a049;
+    color: #fff;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+/* Über uns Sektion */
+.about {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-text, .about-image {
+    flex: 1 1 45%;
+    padding: 20px;
+}
+
+.about-text p.lead {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Leistungen Sektion */
+.services {
+    padding: 60px 20px;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.swiper-container {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.swiper-slide {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.swiper-slide h3 {
+    margin: 15px 0 10px 0;
+    font-size: 1.5em;
+}
+
+.swiper-slide p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+/* Kontakt Sektion */
+.contact {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-info, .contact-form {
+    flex: 1 1 45%;
+    padding: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form .form-consent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-form .form-consent input {
+    margin-right: 10px;
+}
+
+.contact-form .form-consent a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.contact-form .form-consent a:hover {
+    text-decoration: underline;
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-info p, .footer-reviews p {
+    margin: 10px 0;
+}
+
+.footer-reviews .btn {
+    background: #DB4437; /* Google Rot */
+    color: #fff;
+    margin: 10px 0;
+}
+
+.footer-reviews .btn:hover {
+    background: #c23321;
+}
+
+.footer-reviews a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-reviews a i {
+    margin-right: 8px;
+}
+
+/* Responsive Stile */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #4CAF50;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+        text-align: center;
+    }
+    
+    .burger {
+        display: block;
+    }
+    
+    .about-container, .contact-container {
+        flex-direction: column;
+    }
+    
+    .about-text, .about-image, .contact-info, .contact-form {
+        flex: 1 1 100%;
+    }
+    
+    .swiper-slide {
+        padding: 10px;
+    }
+}
