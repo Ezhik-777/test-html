@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-H Gartengestaltung</title>
+    
+    <!-- Font Awesome für Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1emrI1GzqHlZJGUk5VZTpqk1XHcLLGq+UoF2F5CxOGN6F7Gmc69mEHPxV0+6Vq5YtRkL36rTHK70nZsYf3Dkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Swiper.js CSS für die Karussell -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <!-- Eigene CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>M-H Gartengestaltung</h1>
+        <nav aria-label="Hauptnavigation">
+            <ul>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#services">Leistungen</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="/datenschutzerklaerung.html">Datenschutzerklärung</a></li>
+                <li><a href="/impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+        <button class="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navigation">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+    </header>
+    
+    <main>
+        <!-- Showcase Sektion -->
+        <section class="showcase">
+            <div class="showcase-content">
+                <h2>M-H Gartengestaltung</h2>
+                <p>Gartenpflege / Gebäude- und Hausmeisterservice</p>
+                <a href="#contact" class="btn">Kontaktieren Sie uns</a>
+            </div>
+        </section>
+        
+        <!-- Über uns Sektion -->
+        <section id="about" class="about">
+            <h2>Über uns</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p class="lead">Was machen wir?</p>
+                    <p class="lead">Wir bieten professionelle Gartengestaltung, Pflege und umfassende Hausmeisterservices an, um Ihren Außenbereich in eine grüne Oase zu verwandeln.</p>
+                    <a href="https://www.linkedin.com/company/radity/" class="btn"><i class="fas fa-smile"></i> Mehr über uns</a>
+                </div>
+                <div class="about-image">
+                    <img src="img/who-am-i/user-picture.png" alt="Über uns">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Leistungen Sektion mit Karussell -->
+        <section id="services" class="services">
+            <h2>Unsere Leistungen</h2>
+            <div class="swiper-container" role="region" aria-label="Beispiele unserer Arbeit">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="img/works/radity-finance.jpg" alt="Gartengestaltung Privathaushalte">
+                        <h3>Gartengestaltung Privathaushalte</h3>
+                        <p>Wir gestalten individuelle Gärten für Privathaushalte, die sowohl ästhetisch ansprechend als auch funktional sind.</p>
+                        <a href="#" class="btn"><i class="fas fa-arrow-right"></i> Mehr erfahren</a>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="img/works/swissfintech.jpg" alt="Gartengestaltung Gewerbeobjekte">
+                        <h3>Gartengestaltung Gewerbeobjekte</h3>
+                        <p>Professionelle Gartengestaltung für gewerbliche Objekte, um einladende Außenbereiche zu schaffen.</p>
+                        <a href="#" class="btn"><i class="fas fa-arrow-right"></i> Mehr erfahren</a>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="img/works/robo-advisor.jpg" alt="Landschaftsarchitektur">
+                        <h3>Landschaftsarchitektur</h3>
+                        <p>Planung und Umsetzung von komplexen Landschaftsarchitekturprojekten für öffentliche und private Kunden.</p>
+                        <a href="#" class="btn"><i class="fas fa-arrow-right"></i> Mehr erfahren</a>
+                    </div>
+                    <!-- Weitere Slides nach Bedarf hinzufügen -->
+                </div>
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-next" aria-label="Nächster Slide"></div>
+                <div class="swiper-button-prev" aria-label="Vorheriger Slide"></div>
+                <!-- Pagination -->
+                <div class="swiper-pagination" aria-label="Karussell-Pagination"></div>
+            </div>
+        </section>
+        
+        <!-- Kontakt Sektion -->
+        <section id="contact" class="contact">
+            <h2>Kontakt</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><strong>Telefonnummer:</strong> +49 (12) 345 67 89</p>
+                    <p><strong>Email:</strong> <a href="mailto:info.gartenbauzm@gmx.de">info.gartenbauzm@gmx.de</a></p>
+                    <p><strong>Adresse:</strong> Lerchenrain 9, 71686 Remseck am Neckar</p>
+                </div>
+                <div class="contact-form">
+                    <form method="POST" action="https://formspree.io/f/your-form-id" aria-label="Kontaktformular">
+                        <label for="full_name">Name</label>
+                        <input type="text" id="full_name" name="full_name" required>
+                        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Ihre Nachricht</label>
+                        <textarea id="message" name="message" required></textarea>
+                        
+                        <div class="form-consent">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">Ich stimme der Verarbeitung meiner Daten gemäß der <a href="/datenschutzerklaerung.html" target="_blank">Datenschutzerklärung</a> zu.</label>
+                        </div>
+                        
+                        <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Nachricht senden</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <p>Gartenbau Z.M. © 2023</p>
+            <p>USt. ID: DE344409912</p>
+            <p>Steuer-Nr.: 71167/42906</p>
+            <p>Email: <a href="mailto:info.gartenbauzm@gmx.de">info.gartenbauzm@gmx.de</a></p>
+            <p>Adresse: Lerchenrain 9, 71686 Remseck am Neckar</p>
+        </div>
+        <div class="footer-reviews">
+            <p>Wir freuen uns immer über positive Rezensionen auf Google</p>
+            <a href="https://www.google.com/maps/place/YOUR_BUSINESS_PROFILE" target="_blank" class="btn"><i class="fab fa-google"></i> Bewerte uns hier</a>
+            <p>Müssen wir etwas verbessern? Dann wissen wir Ihr Feedback zu schätzen.</p>
+        </div>
+    </footer>
+    
+    <!-- Swiper.js JavaScript -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Eigene JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
